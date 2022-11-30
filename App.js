@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
-import SignIn from "./pages/SignIn"
+import SignIn from "./pages/SignIn";
+import Birthday18 from "./pages/Birthday18";
 
 export default function App() {
-  return <SignIn />;
+  return <Birthday18 />;
 }
