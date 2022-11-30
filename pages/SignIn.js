@@ -3,6 +3,7 @@ import {
   StyleSheet,
   Text,
   View,
+  ScrollView,
   Image,
   TextInput,
   TouchableOpacity,
@@ -12,45 +13,70 @@ import { MaterialIcons } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
 
 import logo from "../assets/images/logo.png";
+const branches = ["Branch A", "Branch B", "Branch C", "Branch D"];
 
 const SignIn = () => {
+  const [showBranches, setShowBranches] = useState(false);
+  const [branch, setBranch] = useState("Select a Brach");
   const [password, setPassword] = useState("");
   const [hiddenPassword, setHiddenPassword] = useState(() =>
     "X".repeat(password.length)
   );
   const [showPassword, setShowPassword] = useState(false);
   const [ID, setID] = useState("");
+  const [rememberMe, setRememberMe] = useState(false);
   return (
-    <View style={styles.container}>
+    <View onPress={() => setShowBranches(false)} style={styles.container}>
       <View style={styles.header}>
         <Image style={styles.image} source={logo} />
         <Text style={styles.division}>
           A DIVISION OF FIRST WEST CREDIT UNION
         </Text>
       </View>
-      <View style={styles.sectionOne}>
+      <View>
         <Text style={styles.branch}>Branch</Text>
 
-        <View style={styles.select}>
-          <Text style={styles.selectBrand}>Select a Branch </Text>
-          <Text>
-            <MaterialIcons
-              style={styles.arrow}
-              name="keyboard-arrow-down"
-              size={24}
-              color="#5dacdd"
-            />
-          </Text>
-        </View>
+        <TouchableOpacity onPress={() => setShowBranches((prev) => !prev)}>
+          <View style={styles.select}>
+            <Text style={styles.selectBrand}>{branch}</Text>
+            <Text>
+              <MaterialIcons
+                style={styles.arrow}
+                name={`keyboard-arrow-${showBranches ? "up" : "down"}`}
+                size={24}
+                color="#5dacdd"
+              />
+            </Text>
+          </View>
+        </TouchableOpacity>
+        {showBranches && (
+          <ScrollView style={styles.branchListContainer}>
+            {branches.map((br) => (
+              <Text
+                key={br}
+                onPress={(e) => {
+                  e.stopPropagation();
+                  setShowBranches(false);
+                  setBranch(br);
+                }}
+                style={styles.branchList}
+              >
+                {br}
+              </Text>
+            ))}
+          </ScrollView>
+        )}
         <Text style={styles.label}>Login ID / Member Number</Text>
         <TextInput
+          editable={!showBranches}
+          selectTextOnFocus={!showBranches}
           onChange={(e) => setID(e.target.value)}
           value={ID}
           style={styles.textInput}
           placeholder="Login ID / Member Number"
         />
       </View>
-      <View style={styles.sectionOne}>
+      <View>
         <View style={styles.passwordSection}>
           <Text>
             {showPassword ? (
@@ -69,6 +95,8 @@ const SignIn = () => {
         <Text style={styles.label}>Password</Text>
         {showPassword ? (
           <TextInput
+            editable={!showBranches}
+            selectTextOnFocus={!showBranches}
             onChangeText={(e) => {
               setPassword(e);
               setHiddenPassword("X".repeat(e.length));
@@ -79,6 +107,8 @@ const SignIn = () => {
           />
         ) : (
           <TextInput
+            editable={!showBranches}
+            selectTextOnFocus={!showBranches}
             onChangeText={(e) => {
               if (e.length > password.length) {
                 const added = e.slice(e.length - 1);
@@ -102,9 +132,11 @@ const SignIn = () => {
       </View>
       <View style={styles.biometric}>
         <CheckBox
+          onPress={() => setRememberMe((prev) => !prev)}
           containerStyle={styles.check}
           style={styles.check}
-          checked={false}
+          checked={rememberMe}
+          checkedColor="green"
         />
         <View>
           <Text style={styles.remember}>Remember me</Text>
@@ -115,8 +147,12 @@ const SignIn = () => {
         </View>
       </View>
       <View>
-        <Text style={styles.login}>LOG IN</Text>
-        <Text style={styles.forgot}>FORGOT PASSWORD?</Text>
+        <TouchableOpacity>
+          <Text style={styles.login}>LOG IN</Text>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <Text style={styles.forgot}>FORGOT PASSWORD?</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -140,10 +176,8 @@ const styles = StyleSheet.create({
   },
   image: {
     width: "80%",
-    // height: 'auto',
   },
   select: {
-    // flex: 3,
     flexDirection: "row",
     alignItems: "center",
     borderBottomWidth: 1,
@@ -155,13 +189,28 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     width: 150,
-    // marginBottom: 20,
     marginVertical: 10,
     alignSelf: "flex-end",
   },
   branch: {
     marginVertical: 20,
     color: "#3f3f3f",
+  },
+  branchListContainer: {
+    position: "absolute",
+    marginTop: 90,
+    backgroundColor: "rgba(255, 255, 255, 1)",
+    width: 100,
+    maxHeight: 200,
+    zIndex: 3, // works on ios
+    elevation: 3, // works on android
+  },
+  branchList: {
+    color: "#`3f3f3f",
+    width: "100%",
+    height: 50,
+    lineHeight: 20,
+    textAlign: "center",
   },
   text: {
     color: "#3f3f3f",
@@ -176,7 +225,6 @@ const styles = StyleSheet.create({
     padding: 0,
     justifyContent: "flex-start",
     alignItems: "flex-start",
-    // width: 5,
   },
   biometric: {
     flexDirection: "row",
@@ -201,19 +249,11 @@ const styles = StyleSheet.create({
     marginBottom: 15,
     color: "#3f3f3f",
   },
-  // show: {
-  //   color: showPassword ? '' : "#b22a57",
-  // },
   division: {
     fontWeight: "700",
     fontSize: 10,
     textAlign: "center",
     color: "#113666",
-  },
-  sectionTwo: {
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100%",
   },
   button: {
     borderWidth: 2,
