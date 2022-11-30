@@ -1,12 +1,25 @@
-import { StyleSheet, Text, View, Image, TextInput } from "react-native";
+import React, { useState } from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  TextInput,
+  TouchableOpacity,
+} from "react-native";
 import { CheckBox } from "react-native-elements";
-import React from "react";
 import { MaterialIcons } from "@expo/vector-icons";
 import { Octicons } from "@expo/vector-icons";
 
 import logo from "../assets/images/logo.png";
 
 const SignIn = () => {
+  const [password, setPassword] = useState("");
+  const [hiddenPassword, setHiddenPassword] = useState(() =>
+    "X".repeat(password.length)
+  );
+  const [showPassword, setShowPassword] = useState(false);
+  const [ID, setID] = useState("");
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -31,6 +44,8 @@ const SignIn = () => {
         </View>
         <Text style={styles.label}>Login ID / Member Number</Text>
         <TextInput
+          onChange={(e) => setID(e.target.value)}
+          value={ID}
           style={styles.textInput}
           placeholder="Login ID / Member Number"
         />
@@ -38,27 +53,70 @@ const SignIn = () => {
       <View style={styles.sectionOne}>
         <View style={styles.passwordSection}>
           <Text>
-            {true ? (
-              <Octicons name="eye" size={24} color="#b22a57" />
+            {showPassword ? (
+              <Octicons name="eye-closed" size={24} color="green" />
             ) : (
-              <Octicons name="eye-closed" size={24} color="black" />
+              <Octicons name="eye" size={24} color="#b22a57" />
             )}{" "}
           </Text>
-          <Text style={styles.show}>{true ? "Show" : "Hide"} password</Text>
+          <TouchableOpacity onPress={() => setShowPassword((prev) => !prev)}>
+            <Text style={{ color: showPassword ? "green" : "#b22a57" }}>
+              {showPassword ? "Hide" : "Show"} password
+            </Text>
+          </TouchableOpacity>
         </View>
 
         <Text style={styles.label}>Password</Text>
-        <TextInput style={styles.textInput} placeholder="password" />
+        {showPassword ? (
+          <TextInput
+            onChangeText={(e) => {
+              setPassword(e);
+              setHiddenPassword("X".repeat(e.length));
+            }}
+            value={password}
+            style={styles.textInput}
+            placeholder="password"
+          />
+        ) : (
+          <TextInput
+            onChangeText={(e) => {
+              if (e.length > password.length) {
+                const added = e.slice(e.length - 1);
+                const passwordArray = password.split("");
+                passwordArray.push(added);
+                setPassword(passwordArray.join(""));
+                setHiddenPassword("X".repeat(passwordArray.join("").length));
+              }
+              if (e.length < password.length) {
+                const passwordArray = password.split("");
+                passwordArray.pop();
+                setPassword(passwordArray.join(""));
+                setHiddenPassword("X".repeat(passwordArray.join("").length));
+              }
+            }}
+            value={hiddenPassword}
+            style={styles.textInput}
+            placeholder="password"
+          />
+        )}
       </View>
       <View style={styles.biometric}>
-        <CheckBox style={styles.check} checked={true} />
+        <CheckBox
+          containerStyle={styles.check}
+          style={styles.check}
+          checked={false}
+        />
         <View>
-          <Text>Remember me</Text>
+          <Text style={styles.remember}>Remember me</Text>
           <Text style={styles.text}>
             Keep this option selected if you want to enable QuickView or
             Biometric Login.
           </Text>
         </View>
+      </View>
+      <View>
+        <Text style={styles.login}>LOG IN</Text>
+        <Text style={styles.forgot}>FORGOT PASSWORD?</Text>
       </View>
     </View>
   );
@@ -75,7 +133,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     width: "100%",
-    marginTop: 100,
+    marginTop: 60,
     borderBottomWidth: 1,
     borderBottomColor: "#ccc",
     paddingBottom: 50,
@@ -89,6 +147,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     borderBottomWidth: 1,
+    borderBottomColor: "#5dacdd",
     width: 150,
     marginBottom: 20,
   },
@@ -102,19 +161,33 @@ const styles = StyleSheet.create({
   },
   branch: {
     marginVertical: 20,
+    color: "#3f3f3f",
+  },
+  text: {
+    color: "#3f3f3f",
   },
   selectBrand: {
     marginRight: 30,
+    color: "#3f3f3f",
   },
   check: {
-    margin: 60,
+    marginBottom: 30,
+    marginLeft: 0,
     padding: 0,
+    justifyContent: "flex-start",
+    alignItems: "flex-start",
+    // width: 5,
   },
   biometric: {
     flexDirection: "row",
     alignItems: "flex-end",
-    padding: 10,
-    width: '90%'
+    padding: 0,
+    margin: 0,
+    width: "90%",
+    marginTop: 10,
+  },
+  remember: {
+    fontWeight: "700",
   },
   arrow: {
     paddingTop: -30,
@@ -126,10 +199,11 @@ const styles = StyleSheet.create({
   },
   label: {
     marginBottom: 15,
+    color: "#3f3f3f",
   },
-  show: {
-    color: "#b22a57",
-  },
+  // show: {
+  //   color: showPassword ? '' : "#b22a57",
+  // },
   division: {
     fontWeight: "700",
     fontSize: 10,
@@ -145,7 +219,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 6,
     alignSelf: "stretch",
-    // flex: 1,
     width: "100%",
     height: 50,
     marginBottom: 51,
@@ -154,5 +227,20 @@ const styles = StyleSheet.create({
     lineHeight: 50,
     fontWeight: "900",
     fontSize: 20,
+  },
+  login: {
+    backgroundColor: "#acabac",
+    color: "#fff",
+    textAlign: "center",
+    height: 50,
+    lineHeight: 50,
+    fontSize: 20,
+    marginTop: 50,
+    marginBottom: 30,
+  },
+  forgot: {
+    textAlign: "center",
+    fontWeight: "500",
+    color: "#6d7893",
   },
 });
