@@ -16,11 +16,11 @@ import RequestSend from "../components/RequestSend";
 import TitleMoney from "../components/TitleMoney";
 import Transactions from "../components/Transactions";
 
-const Birthday18 = () => {
+const Birthday18 = ({navigation}) => {
   return (
     <>
       <SafeAreaView nestedScrollEnabled={true} style={styles.container}>
-      <Header showSettings={true} />
+      <Header navigation={navigation} showSettings={true} />
         <ScrollView style={styles.scrollBox}>
           <TitleMoney />
           <RequestSend />

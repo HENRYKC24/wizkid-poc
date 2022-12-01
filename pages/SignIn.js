@@ -15,7 +15,7 @@ import { Octicons } from "@expo/vector-icons";
 import logo from "../assets/images/logo.png";
 const branches = ["Branch A", "Branch B", "Branch C", "Branch D"];
 
-const SignIn = () => {
+const SignIn = ({navigation}) => {
   const [showBranches, setShowBranches] = useState(false);
   const [branch, setBranch] = useState("Select a Brach");
   const [password, setPassword] = useState("");
@@ -147,7 +147,7 @@ const SignIn = () => {
         </View>
       </View>
       <View>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate('Birthday18')}>
           <Text style={styles.login}>LOG IN</Text>
         </TouchableOpacity>
         <TouchableOpacity>
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     borderBottomWidth: 1,
     borderBottomColor: "#5dacdd",
-    width: 150,
+    maxWidth: 120,
     marginBottom: 20,
   },
   passwordSection: {
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
     color: "#3f3f3f",
   },
   selectBrand: {
-    marginRight: 30,
+    marginRight: 5,
     color: "#3f3f3f",
   },
   check: {

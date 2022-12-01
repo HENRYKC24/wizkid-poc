@@ -9,6 +9,7 @@ import {
   TouchableOpacity,
 } from "react-native";
 import transactions from "../utils/transactions";
+import separateThousandsWithCommas from "../utils/separateThousandsWithCommas";
 
 import group from "../assets/images/group.png";
 
@@ -35,7 +36,7 @@ const Transactions = () => {
                 <Text style={styles.transAmount}>
                   {trans.type === "credit" ? "+" : "-"}
                   {" $"}
-                  {trans.amount.toFixed(2).toLocaleString()}
+                  {separateThousandsWithCommas(trans.amount.toFixed(2))}
                 </Text>
                 <Text style={styles.transDate}>{trans.date}</Text>
               </View>

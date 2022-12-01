@@ -6,7 +6,7 @@ import coin from "../assets/images/coin.png";
 import back from "../assets/images/back.png";
 import settings from "../assets/images/settings.png";
 
-const Header = ({ showSettings }) => {
+const Header = ({ navigation, showSettings }) => {
   const [activeTab, setActiveTab] = useState("spending");
   return (
     <View style={styles.container}>
@@ -39,7 +39,7 @@ const Header = ({ showSettings }) => {
         </TouchableOpacity>
       </View>
       <View style={styles.backSettings}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={() => navigation.navigate("Welcome")}>
           <Image style={styles.back} source={back} />
         </TouchableOpacity>
         {showSettings ? (

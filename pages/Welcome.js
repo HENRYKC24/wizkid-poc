@@ -1,9 +1,9 @@
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
 
 import rotate from "../assets/images/rotate.png";
 
-const Welcome = () => {
+const Welcome = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.sectionOne}>
@@ -11,8 +11,15 @@ const Welcome = () => {
         <Text style={styles.path}>Your Path to Financial Wisdom</Text>
       </View>
       <View style={styles.sectionTwo}>
-        <Text style={styles.button}>GET STARTED</Text>
-        <Text style={styles.button}>LOG IN</Text>
+        <TouchableOpacity style={styles.touchable}>
+          <Text style={styles.button}>GET STARTED</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("SignIn")}
+          style={styles.touchable}
+        >
+          <Text style={styles.button}>LOG IN</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -23,7 +30,7 @@ export default Welcome;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent:'space-between',
+    justifyContent: "space-between",
     alignItems: "center",
     padding: 20,
   },
@@ -45,6 +52,9 @@ const styles = StyleSheet.create({
   sectionTwo: {
     justifyContent: "center",
     alignItems: "center",
+    width: "100%",
+  },
+  touchable: {
     width: "100%",
   },
   button: {
