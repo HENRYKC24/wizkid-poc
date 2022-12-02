@@ -8,7 +8,7 @@ import {
   TouchableWithoutFeedback,
   TouchableOpacity,
 } from "react-native";
-import transactions from "../utils/transactions";
+import transactions from "../tempData/transactions";
 import separateThousandsWithCommas from "../utils/separateThousandsWithCommas";
 
 import group from "../assets/images/group.png";
