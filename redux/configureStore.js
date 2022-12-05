@@ -5,7 +5,14 @@ import {
 } from "@reduxjs/toolkit";
 
 import thunk from "redux-thunk";
-const rootReducer = combineReducers({});
+import wizcoinReducer from "./wizcoin/wizcoin";
+import transactionBalanceReducer from "./transactions/transactionsBalance";
+import transactionHistoryReducer from "./transactions/transactionsHistory";
+const rootReducer = combineReducers({
+  wizcoinReducer,
+  transactionBalanceReducer,
+  transactionHistoryReducer,
+});
 
 const store = configureStore(
   {
