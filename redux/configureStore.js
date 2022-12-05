@@ -1,7 +1,24 @@
-import { createStore, combineReducers } from "redux";
+import {
+  configureStore,
+  combineReducers,
+  applyMiddleware,
+} from "@reduxjs/toolkit";
 
-const rootReducer = combineReducers({});
+import thunk from "redux-thunk";
+import wizcoinReducer from "./wizcoin/wizcoin";
+import transactionBalanceReducer from "./transactions/transactionsBalance";
+import transactionHistoryReducer from "./transactions/transactionsHistory";
+const rootReducer = combineReducers({
+  wizcoinReducer,
+  transactionBalanceReducer,
+  transactionHistoryReducer,
+});
 
-const store = createStore(rootReducer);
+const store = configureStore(
+  {
+    reducer: rootReducer,
+  },
+  applyMiddleware(thunk)
+);
 
 export default store;
