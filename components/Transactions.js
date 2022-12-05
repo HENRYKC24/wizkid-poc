@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Image,
   StyleSheet,
@@ -14,36 +14,45 @@ import separateThousandsWithCommas from "../utils/separateThousandsWithCommas";
 import group from "../assets/images/group.png";
 
 const Transactions = () => {
+  const [showTransactions, setShowTransactions] = useState(false);
   return (
     <ScrollView style={styles.container}>
       <View style={styles.transHeader}>
         <Text style={styles.tranText}>Transactions</Text>
-        <TouchableOpacity>
-          <Image style={styles.group} source={group} />
+        <TouchableOpacity
+          style={[
+            styles.group,
+            showTransactions ? {} : { backgroundColor: "#444" },
+          ]}
+          onPress={() => setShowTransactions((prev) => !prev)}
+        >
+          <Image source={group} />
         </TouchableOpacity>
       </View>
-      <ScrollView>
-        {transactions.map((trans) => (
-          <TouchableWithoutFeedback key={trans.id} style={styles.transBox}>
-            <View style={styles.transactionItem}>
-              <View style={styles.typeBox}>
-                <Text style={styles.transType}>
-                  {trans.type === "credit" ? "Received Money" : "Sent Money"}
-                </Text>
-                <Text style={styles.transWho}>{trans.who}</Text>
+      {showTransactions && (
+        <ScrollView>
+          {transactions.map((trans) => (
+            <TouchableWithoutFeedback key={trans.id} style={styles.transBox}>
+              <View style={styles.transactionItem}>
+                <View style={styles.typeBox}>
+                  <Text style={styles.transType}>
+                    {trans.type === "credit" ? "Received Money" : "Sent Money"}
+                  </Text>
+                  <Text style={styles.transWho}>{trans.who}</Text>
+                </View>
+                <View style={styles.transDetails}>
+                  <Text style={styles.transAmount}>
+                    {trans.type === "credit" ? "+" : "-"}
+                    {" $"}
+                    {separateThousandsWithCommas(trans.amount.toFixed(2))}
+                  </Text>
+                  <Text style={styles.transDate}>{trans.date}</Text>
+                </View>
               </View>
-              <View style={styles.transDetails}>
-                <Text style={styles.transAmount}>
-                  {trans.type === "credit" ? "+" : "-"}
-                  {" $"}
-                  {separateThousandsWithCommas(trans.amount.toFixed(2))}
-                </Text>
-                <Text style={styles.transDate}>{trans.date}</Text>
-              </View>
-            </View>
-          </TouchableWithoutFeedback>
-        ))}
-      </ScrollView>
+            </TouchableWithoutFeedback>
+          ))}
+        </ScrollView>
+      )}
     </ScrollView>
   );
 };
@@ -54,8 +63,12 @@ const styles = StyleSheet.create({
   container: {
     marginBottom: 250,
   },
-  transBox: {
-    // height: 200,
+  group: {
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 100,
+    width: 30,
+    height: 30,
   },
   transHeader: {
     flexDirection: "row",
