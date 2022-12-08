@@ -1,0 +1,338 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SignIn /> renders correctly 1`] = `
+<View
+  onPress={[Function]}
+  style={
+    Object {
+      "flex": 1,
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "borderBottomColor": "#ccc",
+        "borderBottomWidth": 1,
+        "justifyContent": "center",
+        "marginTop": 60,
+        "paddingBottom": 50,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "width": "80%",
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "color": "#113666",
+          "fontSize": 10,
+          "fontWeight": "700",
+          "textAlign": "center",
+        }
+      }
+    >
+      A DIVISION OF FIRST WEST CREDIT UNION
+    </Text>
+  </View>
+  <View>
+    <Text
+      style={
+        Object {
+          "color": "#3f3f3f",
+          "marginVertical": 20,
+        }
+      }
+    >
+      Branch
+    </Text>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomColor": "#5dacdd",
+            "borderBottomWidth": 1,
+            "flexDirection": "row",
+            "marginBottom": 20,
+            "maxWidth": 120,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#3f3f3f",
+              "marginRight": 5,
+            }
+          }
+        >
+          Select a Brach
+        </Text>
+        <Text>
+          <Text />
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#3f3f3f",
+          "marginBottom": 15,
+        }
+      }
+    >
+      Login ID / Member Number
+    </Text>
+    <TextInput
+      editable={true}
+      onChange={[Function]}
+      placeholder="Login ID / Member Number"
+      selectTextOnFocus={true}
+      style={
+        Object {
+          "borderBottomColor": "#ccc",
+          "borderBottomWidth": 1,
+          "padding": 0,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "flex-end",
+          "flexDirection": "row",
+          "marginVertical": 10,
+          "width": 150,
+        }
+      }
+    >
+      <Text>
+        <Text />
+         
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "#b22a57",
+            }
+          }
+        >
+          Show
+           password
+        </Text>
+      </View>
+    </View>
+    <Text
+      style={
+        Object {
+          "color": "#3f3f3f",
+          "marginBottom": 15,
+        }
+      }
+    >
+      Password
+    </Text>
+    <TextInput
+      editable={true}
+      onChangeText={[Function]}
+      placeholder="password"
+      selectTextOnFocus={true}
+      style={
+        Object {
+          "borderBottomColor": "#ccc",
+          "borderBottomWidth": 1,
+          "padding": 0,
+        }
+      }
+      value=""
+    />
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "flex-end",
+        "flexDirection": "row",
+        "margin": 0,
+        "marginTop": 10,
+        "padding": 0,
+        "width": "90%",
+      }
+    }
+  >
+    <View
+      accessibilityRole="checkbox"
+      accessibilityState={
+        Object {
+          "checked": false,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "justifyContent": "flex-start",
+          "margin": 5,
+          "marginBottom": 30,
+          "marginLeft": 0,
+          "marginRight": 10,
+          "opacity": 1,
+          "padding": 0,
+        }
+      }
+      testID="checkbox"
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <Text />
+      </View>
+    </View>
+    <View>
+      <Text
+        style={
+          Object {
+            "fontWeight": "700",
+          }
+        }
+      >
+        Remember me
+      </Text>
+      <Text
+        style={
+          Object {
+            "color": "#3f3f3f",
+          }
+        }
+      >
+        Keep this option selected if you want to enable QuickView or Biometric Login.
+      </Text>
+    </View>
+  </View>
+  <View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "backgroundColor": "#acabac",
+            "color": "#fff",
+            "fontSize": 20,
+            "height": 50,
+            "lineHeight": 50,
+            "marginBottom": 30,
+            "marginTop": 50,
+            "textAlign": "center",
+          }
+        }
+      >
+        LOG IN
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "color": "#6d7893",
+            "fontWeight": "500",
+            "textAlign": "center",
+          }
+        }
+      >
+        FORGOT PASSWORD?
+      </Text>
+    </View>
+  </View>
+</View>
+`;
