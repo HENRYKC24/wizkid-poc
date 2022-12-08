@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Welcome /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "space-between",
+      "padding": 20,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginTop": 100,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={1}
+      style={
+        Object {
+          "height": 160,
+          "width": 165,
+        }
+      }
+    />
+    <Text
+      style={
+        Object {
+          "fontSize": 36,
+          "fontWeight": "700",
+          "textAlign": "center",
+        }
+      }
+    >
+      Your Path to Financial Wisdom
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "borderRadius": 6,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "fontSize": 20,
+            "fontWeight": "900",
+            "height": 50,
+            "lineHeight": 50,
+            "marginBottom": 51,
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
+      >
+        GET STARTED
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "alignSelf": "stretch",
+            "borderRadius": 6,
+            "borderWidth": 2,
+            "flexDirection": "row",
+            "fontSize": 20,
+            "fontWeight": "900",
+            "height": 50,
+            "lineHeight": 50,
+            "marginBottom": 51,
+            "textAlign": "center",
+            "width": "100%",
+          }
+        }
+      >
+        LOG IN
+      </Text>
+    </View>
+  </View>
+</View>
+`;
