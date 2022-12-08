@@ -1,0 +1,1140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Birthday18 /> renders correctly 1`] = `
+Array [
+  <RCTSafeAreaView
+    nestedScrollEnabled={true}
+    style={
+      Object {
+        "marginHorizontal": 20,
+        "marginTop": 30,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "flex-end",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "paddingBottom": 20,
+          "position": "static",
+          "zIndex": 2,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "marginBottom": -20,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "borderRadius": 100,
+                "height": 40,
+                "width": 40,
+              }
+            }
+          />
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={1}
+            />
+            <Text
+              style={
+                Object {
+                  "color": "#888",
+                  "fontWeight": "800",
+                }
+              }
+            >
+              80K
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "gap": 20,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "marginRight": 20,
+                },
+                Object {
+                  "color": "#000",
+                  "fontWeight": "700",
+                  "textDecorationColor": "#000",
+                  "textDecorationLine": "underline",
+                  "textDecorationStyle": "solid",
+                },
+              ]
+            }
+          >
+            Spending
+          </Text>
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                "",
+              ]
+            }
+          >
+            Saving
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "column",
+            "justifyContent": "flex-end",
+          }
+        }
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "marginBottom": 15,
+              }
+            }
+          />
+        </View>
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "marginLeft": 8,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <RCTScrollView>
+      <View>
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "marginTop": 10,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "fontSize": 14,
+                "fontWeight": "500",
+              }
+            }
+          >
+            SIMPLE FREE ACCOUNT
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#000",
+                "fontSize": 32,
+                "fontWeight": "700",
+                "letterSpacing": 0.02,
+              }
+            }
+          >
+            $1,560.20
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "marginTop": 25,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "#e0e0e0",
+                  "borderRadius": 20,
+                  "color": "#888",
+                  "fontWeight": "700",
+                  "marginHorizontal": 5,
+                  "paddingVertical": 6,
+                  "textAlign": "center",
+                  "width": 132,
+                }
+              }
+            >
+              Request
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "backgroundColor": "#e0e0e0",
+                  "borderRadius": 20,
+                  "color": "#888",
+                  "fontWeight": "700",
+                  "marginHorizontal": 5,
+                  "paddingVertical": 6,
+                  "textAlign": "center",
+                  "width": 132,
+                }
+              }
+            >
+              Send
+            </Text>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "backgroundColor": "#494949",
+              "borderRadius": 20,
+              "marginTop": 32,
+              "padding": 20,
+            }
+          }
+        >
+          <Image
+            source={1}
+            style={
+              Object {
+                "alignSelf": "center",
+              }
+            }
+          />
+          <Text
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "textAlign": "center",
+              }
+            }
+          >
+            Establishing a credit history ensures your financial will-being in future. You will need an excellent credit record to apply for leases and mortgages, secure loans, and even advance your career.
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#fff",
+                "fontSize": 16,
+                "fontWeight": "700",
+                "marginTop": 20,
+                "textAlign": "center",
+              }
+            }
+          >
+            Our Zero Fee Credit Card can help you establish your credit whhile taking advantage of many additional benefits.
+          </Text>
+          <View
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignSelf": "center",
+                "opacity": 1,
+                "width": 132,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "backgroundColor": "#E0E0E0",
+                  "borderRadius": 20,
+                  "color": "#888",
+                  "fontWeight": "700",
+                  "height": 28,
+                  "lineHeight": 28,
+                  "marginTop": 20,
+                  "textAlign": "center",
+                  "width": 132,
+                }
+              }
+            >
+              Apply Now
+            </Text>
+          </View>
+        </View>
+        <RCTScrollView
+          style={
+            Object {
+              "marginBottom": 250,
+            }
+          }
+        >
+          <View>
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginTop": 20,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "fontSize": 24,
+                    "fontWeight": "400",
+                  }
+                }
+              >
+                Transactions
+              </Text>
+              <View
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Image
+                  source={1}
+                />
+              </View>
+            </View>
+            <RCTScrollView>
+              <View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Received Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      ridoyrock@gmail.com
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      +
+                       $
+                      1,600.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 23, 2021
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sent Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Airbnb Payment
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      -
+                       $
+                      600.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 20, 2022
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Received Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Upwork Earning
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      +
+                       $
+                      310.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 23, 2021
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Received Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      ridoyrock@gmail.com
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      +
+                       $
+                      1,600.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 23, 2021
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sent Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Airbnb Payment
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      -
+                       $
+                      600.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 20, 2022
+                    </Text>
+                  </View>
+                </View>
+                <View
+                  accessible={true}
+                  focusable={false}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "flexDirection": "row",
+                      "justifyContent": "space-between",
+                      "marginTop": 20,
+                    }
+                  }
+                >
+                  <View>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#31456a",
+                          "fontSize": 15,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Received Money
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Upwork Earning
+                    </Text>
+                  </View>
+                  <View
+                    style={
+                      Object {
+                        "alignItems": "flex-end",
+                        "display": "flex",
+                      }
+                    }
+                  >
+                    <Text
+                      style={
+                        Object {
+                          "color": "#677895",
+                          "fontSize": 16,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      +
+                       $
+                      310.00
+                    </Text>
+                    <Text
+                      style={
+                        Object {
+                          "color": "#7787A2",
+                          "fontSize": 10,
+                          "fontWeight": "400",
+                        }
+                      }
+                    >
+                      Sep 23, 2021
+                    </Text>
+                  </View>
+                </View>
+              </View>
+            </RCTScrollView>
+          </View>
+        </RCTScrollView>
+      </View>
+    </RCTScrollView>
+  </RCTSafeAreaView>,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#73a1d1",
+        "bottom": 0,
+        "flexDirection": "row",
+        "height": 97.94,
+        "justifyContent": "space-between",
+        "margin": 0,
+        "paddingHorizontal": 42,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+        />
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 12,
+              "fontWeight": "500",
+            }
+          }
+        >
+          Earn
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "fontSize": 12,
+                "fontWeight": "500",
+              },
+              Object {
+                "marginBottom": 12,
+              },
+            ]
+          }
+        >
+          Share
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+        />
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 12,
+              "fontWeight": "500",
+            }
+          }
+        >
+          Learn
+        </Text>
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "justifyContent": "center",
+          }
+        }
+      >
+        <Image
+          source={1}
+        />
+        <Text
+          style={
+            Object {
+              "color": "#000",
+              "fontSize": 12,
+              "fontWeight": "500",
+            }
+          }
+        >
+          Rewards
+        </Text>
+      </View>
+    </View>
+  </View>,
+]
+`;
