@@ -6,13 +6,15 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "jest"
   },
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@react-navigation/native": "^6.0.16",
     "@react-navigation/native-stack": "^6.9.4",
     "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/react-native": "^11.5.0",
     "expo": "~47.0.8",
     "expo-constants": "^14.0.2",
     "expo-linear-gradient": "~12.0.1",
@@ -31,7 +33,30 @@
     "redux-thunk": "^2.4.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9"
+    "@babel/core": "^7.12.9",
+    "jest": "^27.5.1",
+    "jest-expo": "^47.0.1",
+    "jest-fetch-mock": "^3.0.3",
+    "react-native-testing-library": "^6.0.0",
+    "react-test-renderer": "^18.1.0"
   },
-  "private": true
+  "private": true,
+  "jest": {
+    "setupFiles": [
+      "./mock.js"
+    ],
+    "preset": "jest-expo",
+    "testEnvironment": "jsdom",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|native-notify)"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/coverage/**",
+      "!**/node_modules/**",
+      "!**/babel.config.js",
+      "!**/jest.setup.js"
+    ]
+  }
 }
