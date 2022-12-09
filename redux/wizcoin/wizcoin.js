@@ -1,7 +1,7 @@
 import { showError, hideError } from "../error/error";
 
-const GET_WIZCOIN_BALANCE = "wizkid/GET_WIZCOIN_BALANCE";
-const UPDATE_WIZCOIN_BALANCE = "wizkid/UPDATE_WIZCOIN_BALANCE";
+export const GET_WIZCOIN_BALANCE = "wizkid/GET_WIZCOIN_BALANCE";
+export const UPDATE_WIZCOIN_BALANCE = "wizkid/UPDATE_WIZCOIN_BALANCE";
 
 // Create actions
 export function getWizcoinBalance(payload) {
@@ -12,18 +12,19 @@ export function updateWizcoinBalance(payload) {
   return { type: UPDATE_WIZCOIN_BALANCE, payload };
 }
 
-const initialState = {
+export const initialState = {
   balance: 0,
 };
 
 // Define reducer
 export default function wizcoinReducer(state = initialState, action = {}) {
   const { type, payload } = action;
+  // console.log(type, payload, 'stuffs')
   switch (type) {
     case GET_WIZCOIN_BALANCE:
-      return { balance: payload };
+      return payload;
     case UPDATE_WIZCOIN_BALANCE:
-      return { balance: payload };
+      return payload;
     default:
       return state;
   }

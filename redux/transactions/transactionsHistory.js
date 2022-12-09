@@ -1,13 +1,13 @@
 import { showError, hideError } from "../error/error";
 
-const GET_TRANSACTION_HISTORY = "wizkid/accounts/GET_TRANSACTION_HISTORY";
+export const GET_TRANSACTION_HISTORY = "wizkid/accounts/GET_TRANSACTION_HISTORY";
 
 // Create actions
 export function getTransactionHistory(payload) {
   return { type: GET_TRANSACTION_HISTORY, payload };
 }
 
-const initialState = [];
+export const initialState = [];
 
 // Define reducer
 export default function transactionHistoryReducer(

@@ -1,7 +1,7 @@
 import { hideError, showError } from "../error/error";
 
-const GET_TRANSACTION_BALANCE = "wizkid/accounts/GET_TRANSACTION_BALANCE";
-const UPDATE_TRANSACTION_BALANCE = "wizkid/accounts/UPDATE_TRANSACTION_BALANCE";
+export const GET_TRANSACTION_BALANCE = "wizkid/accounts/GET_TRANSACTION_BALANCE";
+export const UPDATE_TRANSACTION_BALANCE = "wizkid/accounts/UPDATE_TRANSACTION_BALANCE";
 
 // Create actions
 export function getTransactionBalance(payload) {
@@ -11,7 +11,7 @@ export function updateTransactionBalance(payload) {
   return { type: UPDATE_TRANSACTION_BALANCE, payload };
 }
 
-const initialState = 0;
+export const initialState = 0;
 
 // Define reducer
 export default function transactionBalanceReducer(

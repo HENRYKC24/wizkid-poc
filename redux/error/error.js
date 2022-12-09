@@ -1,5 +1,5 @@
-const SHOW_ERROR = "wizkid/error/SHOW_ERROR";
-const HIDE_ERROR = "wizkid/error/HIDE_ERROR";
+export const SHOW_ERROR = "wizkid/error/SHOW_ERROR";
+export const HIDE_ERROR = "wizkid/error/HIDE_ERROR";
 
 // Create actions
 export function showError(payload) {
@@ -9,7 +9,7 @@ export function hideError(payload) {
   return { type: HIDE_ERROR, payload };
 }
 
-const initialState = {
+export const initialState = {
   errorStatus: false,
   error: null,
 };
