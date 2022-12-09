@@ -15,9 +15,9 @@ import { Octicons } from "@expo/vector-icons";
 import logo from "../assets/images/logo.png";
 const branches = ["Branch A", "Branch B", "Branch C", "Branch D"];
 
-const SignIn = ({navigation}) => {
+const SignIn = ({ navigation }) => {
   const [showBranches, setShowBranches] = useState(false);
-  const [branch, setBranch] = useState("Select a Brach");
+  const [branch, setBranch] = useState("Select a Branch");
   const [password, setPassword] = useState("");
   const [hiddenPassword, setHiddenPassword] = useState(() =>
     "X".repeat(password.length)
@@ -70,7 +70,7 @@ const SignIn = ({navigation}) => {
         <TextInput
           editable={!showBranches}
           selectTextOnFocus={!showBranches}
-          onChange={(e) => setID(e.target.value)}
+          onChangeText={(text) => setID(text)}
           value={ID}
           style={styles.textInput}
           placeholder="Login ID / Member Number"
@@ -97,9 +97,9 @@ const SignIn = ({navigation}) => {
           <TextInput
             editable={!showBranches}
             selectTextOnFocus={!showBranches}
-            onChangeText={(e) => {
-              setPassword(e);
-              setHiddenPassword("X".repeat(e.length));
+            onChangeText={(text) => {
+              setPassword(text);
+              setHiddenPassword("X".repeat(text.length));
             }}
             value={password}
             style={styles.textInput}
@@ -109,15 +109,15 @@ const SignIn = ({navigation}) => {
           <TextInput
             editable={!showBranches}
             selectTextOnFocus={!showBranches}
-            onChangeText={(e) => {
-              if (e.length > password.length) {
-                const added = e.slice(e.length - 1);
+            onChangeText={(text) => {
+              if (text.length > password.length) {
+                const added = text.slice(text.length - 1);
                 const passwordArray = password.split("");
                 passwordArray.push(added);
                 setPassword(passwordArray.join(""));
                 setHiddenPassword("X".repeat(passwordArray.join("").length));
               }
-              if (e.length < password.length) {
+              if (text.length < password.length) {
                 const passwordArray = password.split("");
                 passwordArray.pop();
                 setPassword(passwordArray.join(""));
@@ -147,8 +147,28 @@ const SignIn = ({navigation}) => {
         </View>
       </View>
       <View>
-        <TouchableOpacity onPress={() => navigation.navigate('Birthday18')}>
-          <Text style={styles.login}>LOG IN</Text>
+        <TouchableOpacity
+          onPress={() =>
+            ID &&
+            password &&
+            branch &&
+            branch !== "Select a Branch" &&
+            navigation.navigate("Birthday18")
+          }
+        >
+          <Text
+            style={[
+              styles.login,
+              {
+                backgroundColor:
+                  ID && password && branch && branch !== "Select a Branch"
+                    ? "#0a0"
+                    : "#acabac",
+              },
+            ]}
+          >
+            LOG IN
+          </Text>
         </TouchableOpacity>
         <TouchableOpacity>
           <Text style={styles.forgot}>FORGOT PASSWORD?</Text>
@@ -269,7 +289,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   login: {
-    backgroundColor: "#acabac",
     color: "#fff",
     textAlign: "center",
     height: 50,
