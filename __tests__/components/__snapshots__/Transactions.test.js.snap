@@ -1,0 +1,522 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Transactions /> renders correctly 1`] = `
+<RCTScrollView
+  style={
+    Object {
+      "marginBottom": 250,
+    }
+  }
+>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 20,
+        }
+      }
+    >
+      <Text
+        style={
+          Object {
+            "fontSize": 24,
+            "fontWeight": "400",
+          }
+        }
+      >
+        Transactions
+      </Text>
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+      >
+        <Image
+          source={1}
+        />
+      </View>
+    </View>
+    <RCTScrollView>
+      <View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Received Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              ridoyrock@gmail.com
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              +
+               $
+              1,600.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 23, 2021
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sent Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Airbnb Payment
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              -
+               $
+              600.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 20, 2022
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Received Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Upwork Earning
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              +
+               $
+              310.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 23, 2021
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Received Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              ridoyrock@gmail.com
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              +
+               $
+              1,600.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 23, 2021
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sent Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Airbnb Payment
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              -
+               $
+              600.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 20, 2022
+            </Text>
+          </View>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginTop": 20,
+            }
+          }
+        >
+          <View>
+            <Text
+              style={
+                Object {
+                  "color": "#31456a",
+                  "fontSize": 15,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Received Money
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Upwork Earning
+            </Text>
+          </View>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "display": "flex",
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "color": "#677895",
+                  "fontSize": 16,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              +
+               $
+              310.00
+            </Text>
+            <Text
+              style={
+                Object {
+                  "color": "#7787A2",
+                  "fontSize": 10,
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Sep 23, 2021
+            </Text>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTScrollView>
+`;

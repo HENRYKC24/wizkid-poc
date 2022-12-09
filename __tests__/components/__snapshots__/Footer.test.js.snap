@@ -1,0 +1,190 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#73a1d1",
+      "bottom": 0,
+      "flexDirection": "row",
+      "height": 97.94,
+      "justifyContent": "space-between",
+      "margin": 0,
+      "paddingHorizontal": 42,
+      "position": "absolute",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 12,
+            "fontWeight": "500",
+          }
+        }
+      >
+        Earn
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontSize": 12,
+              "fontWeight": "500",
+            },
+            Object {
+              "marginBottom": 12,
+            },
+          ]
+        }
+      >
+        Share
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 12,
+            "fontWeight": "500",
+          }
+        }
+      >
+        Learn
+      </Text>
+    </View>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Image
+        source={1}
+      />
+      <Text
+        style={
+          Object {
+            "color": "#000",
+            "fontSize": 12,
+            "fontWeight": "500",
+          }
+        }
+      >
+        Rewards
+      </Text>
+    </View>
+  </View>
+</View>
+`;

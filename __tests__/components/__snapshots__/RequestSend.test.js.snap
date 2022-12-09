@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<RequestSend /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "marginTop": 25,
+    }
+  }
+>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "borderRadius": 20,
+          "color": "#888",
+          "fontWeight": "700",
+          "marginHorizontal": 5,
+          "paddingVertical": 6,
+          "textAlign": "center",
+          "width": 132,
+        }
+      }
+    >
+      Request
+    </Text>
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "backgroundColor": "#e0e0e0",
+          "borderRadius": 20,
+          "color": "#888",
+          "fontWeight": "700",
+          "marginHorizontal": 5,
+          "paddingVertical": 6,
+          "textAlign": "center",
+          "width": 132,
+        }
+      }
+    >
+      Send
+    </Text>
+  </View>
+</View>
+`;

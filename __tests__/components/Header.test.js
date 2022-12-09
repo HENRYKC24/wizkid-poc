@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Header from '../../components/Header';
 
 describe('<Header />', () => {
-  it('has 1 child', () => {
+  it('has 3 children', () => {
     const tree = renderer.create(<Header />).toJSON();
     expect(tree.children.length).toBe(3);
   });

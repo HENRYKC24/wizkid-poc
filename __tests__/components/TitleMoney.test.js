@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import TitleMoney from "../../components/TitleMoney";
 
 describe("<TitleMoney />", () => {
-  it("has 1 child", () => {
+  it("has 2 children", () => {
     const tree = renderer.create(<TitleMoney />).toJSON();
     expect(tree.children.length).toBe(2);
   });

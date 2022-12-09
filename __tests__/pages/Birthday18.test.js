@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import Birthday18 from "../../pages/Birthday18";
 
 describe("<Birthday18 />", () => {
-  it("has 1 child", () => {
+  it("has 2 children", () => {
     const tree = renderer.create(<Birthday18 />).toJSON();
     expect(tree.length).toBe(2);
   });

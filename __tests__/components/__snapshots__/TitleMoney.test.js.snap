@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<TitleMoney /> renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "marginTop": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 14,
+        "fontWeight": "500",
+      }
+    }
+  >
+    SIMPLE FREE ACCOUNT
+  </Text>
+  <Text
+    style={
+      Object {
+        "color": "#000",
+        "fontSize": 32,
+        "fontWeight": "700",
+        "letterSpacing": 0.02,
+      }
+    }
+  >
+    $1,560.20
+  </Text>
+</View>
+`;

@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import RequestSend from "../../components/RequestSend";
 
 describe("<RequestSend />", () => {
-  it("has 1 child", () => {
+  it("has 2 children", () => {
     const tree = renderer.create(<RequestSend />).toJSON();
     expect(tree.children.length).toBe(2);
   });

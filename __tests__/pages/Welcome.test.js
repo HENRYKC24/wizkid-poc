@@ -4,7 +4,7 @@ import renderer from 'react-test-renderer';
 import Welcome from '../../pages/Welcome';
 
 describe('<Welcome />', () => {
-  it('has 1 child', () => {
+  it('has 2 children', () => {
     const tree = renderer.create(<Welcome />).toJSON();
     expect(tree.children.length).toBe(2);
   });
